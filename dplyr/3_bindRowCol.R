@@ -1,0 +1,13 @@
+data1<-data.frame(x1=1:5,
+                  x2=letters[1:5])
+data2<-data.frame(x1=0,
+                  x3=5:9)
+data3<-data.frame(x3=5:9,
+                  x4=letters[5:9])
+data1
+data2
+data3
+library("dplyr")
+bind_rows(data1,data2)
+#bind_rows(data1,data3)
+bind_cols(data1,data3)
